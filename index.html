@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include custom CSS if needed -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="calculator" class="calculator">
+            <input type="text" id="display" class="form-control" readonly>
+            <div class="buttons">
+                <!-- First row of numbers -->
+                <div class="row">
+                    <button class="btn btn-dark " onclick="inputNumber('7')">7</button>
+                    <button class="btn btn-dark" onclick="inputNumber('8')">8</button>
+                    <button class="btn btn-dark" onclick="inputNumber('9')">9</button>
+                    <button class="btn btn-secondary" onclick="inputOperation('/')">/</button>
+                    
+                </div>
+                <!-- Second row of numbers -->
+                <div class="row">
+                    <button class="btn btn-dark" onclick="inputNumber('4')">4</button>
+                    <button class="btn btn-dark" onclick="inputNumber('5')">5</button>
+                    <button class="btn btn-dark" onclick="inputNumber('6')">6</button>
+                    <button class="btn btn-secondary" onclick="inputOperation('*')">*</button>
+                </div>
+                <!-- Third row of numbers -->
+                <div class="row">
+                    <button class="btn btn-dark" onclick="inputNumber('1')">1</button>
+                    <button class="btn btn-dark" onclick="inputNumber('2')">2</button>
+                    <button class="btn btn-dark" onclick="inputNumber('3')">3</button>
+                    <button class="btn btn-secondary" onclick="inputOperation('-')">-</button>
+                </div>
+                <!-- Fourth row of operations -->
+                <div class="row">
+                    <button class="btn btn-dark" onclick="inputNumber('0')">0</button>
+                    <button class="btn btn-dark" onclick="inputNumber('00')">00</button>
+                    <button class="btn btn-dark" onclick="inputNumber('.')">.</button>
+                    <button class="btn btn-secondary" onclick="inputOperation('+')">+</button>
+                   
+                </div>
+
+
+
+                 <!-- Fifth row of operations -->
+                <div class="row">
+                    
+                    <button class="btn btn-secondary" onclick="calculate()">=</button>
+                    <button class="btn btn-danger" onclick="clearDisplay()">C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

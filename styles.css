@@ -1,0 +1,45 @@
+/* Default styles */
+.calculator {
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 576px) {
+    .calculator {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .calculator {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .calculator {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .calculator {
+        max-width: 800px;
+    }
+}
+/* Add custom styles here */
+
